@@ -1,0 +1,132 @@
+body {
+  margin: auto 300px auto 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+.cell {
+  background-color: lightgoldenrodyellow;
+  width: 30px;
+  height: 30px;
+  border: 0.5px solid black;
+  box-sizing: border-box;
+}
+
+.options {
+  background-color: lightgoldenrodyellow;
+  border: 1px solid black;
+  display: flex;
+  gap: 50px;
+  height: 100px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-btn {
+  margin-bottom: 5px;
+}
+
+.destroyer-option {
+  background-color: red;
+  width: 40px;
+  height: 20px;
+}
+
+.submarine-option {
+  background-color: blue;
+  width: 40px;
+  height: 20px;
+}
+
+.cruiser-option {
+  background-color: green;
+  width: 60px;
+  height: 20px;
+}
+
+.battleship-option {
+  background-color: orange;
+  width: 80px;
+  height: 20px;
+}
+
+.carrier-option {
+  background-color: purple;
+  width: 100px;
+  height: 20px;
+}
+
+.player-board .hit.destroyer,
+.player-board .hit.submarine,
+.player-board .hit.cruiser,
+.player-board .hit.battleship,
+.player-board .hit.carrier {
+  background-color: black;
+}
+
+.player-board .destroyer,
+.computer-board .hit.destroyer {
+  background-color: red;
+}
+
+.player-board .submarine,
+.computer-board .hit.submarine {
+  background-color: blue;
+}
+
+.player-board .cruiser,
+.computer-board .hit.cruiser {
+  background-color: green;
+}
+
+.player-board .battleship,
+.computer-board .hit.battleship {
+  background-color: orange;
+}
+
+.player-board .carrier,
+.computer-board .hit.carrier {
+  background-color: purple;
+}
+
+.hit {
+  background-color: gray;
+}
+
+.reset-btn {
+  display: none;
+}
+
+.btns {
+  height: 1em;
+}
+
+.text {
+  height: 2em;
+  margin-bottom: 10px;
+}
+
+/* .cell[disabled] {
+  color: black;
+} */
